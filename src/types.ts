@@ -33,4 +33,13 @@ export type ToolInputByName = {
 export type AppSettings = {
   apiKey: string;
   model: string;
+  gistToken: string;
+  gistId: string;
 };
+
+export type SyncState =
+  | { kind: "idle" }
+  | { kind: "pulling" }
+  | { kind: "pushing" }
+  | { kind: "offline" }
+  | { kind: "error"; message: string };

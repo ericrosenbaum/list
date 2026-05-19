@@ -5,6 +5,7 @@ import TaskList from "@tiptap/extension-task-list";
 import TaskItem from "@tiptap/extension-task-item";
 import { IdAttr } from "./extensions/IdAttr";
 import { loadDoc, saveDoc } from "../../lib/storage";
+import { pushDoc } from "../../lib/sync";
 import { INITIAL_DOC } from "./initialDoc";
 
 type Props = {
@@ -26,7 +27,9 @@ export function ListEditor({ onEditorReady }: Props) {
     onUpdate: ({ editor }) => {
       if (saveTimer.current) window.clearTimeout(saveTimer.current);
       saveTimer.current = window.setTimeout(() => {
-        saveDoc(editor.getJSON());
+        const json = editor.getJSON();
+        saveDoc(json);
+        pushDoc(json);
       }, 300);
     },
   });

@@ -25,6 +25,7 @@ import { Composer } from "./Composer";
 import { ProposedChangeCard } from "./ProposedChangeCard";
 import { SettingsPanel } from "./SettingsPanel";
 import { ChatHistoryMenu } from "./ChatHistoryMenu";
+import { SyncStatus } from "../SyncStatus";
 
 type Props = { editor: Editor | null };
 
@@ -200,6 +201,7 @@ export function ChatPanel({ editor }: Props) {
           {active.title}
         </div>
         <div className="chat-header-actions">
+          <SyncStatus />
           <button className="icon-btn" title="New chat" onClick={startNewChat}>
             ＋
           </button>
@@ -249,6 +251,7 @@ export function ChatPanel({ editor }: Props) {
           onSave={(s) => {
             setSettings(s);
             saveSettings(s);
+            window.dispatchEvent(new Event("list-settings-changed"));
           }}
           onClose={() => setShowSettings(false)}
         />

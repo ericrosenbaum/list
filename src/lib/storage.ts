@@ -6,6 +6,9 @@ const KEYS = {
   activeChat: "list.activeChatId",
   apiKey: "list.apiKey",
   model: "list.model",
+  gistToken: "list.gistToken",
+  gistId: "list.gistId",
+  lastSyncedAt: "list.lastSyncedAt",
 } as const;
 
 function read<T>(key: string): T | null {
@@ -51,10 +54,22 @@ export function loadSettings(): AppSettings {
   return {
     apiKey: localStorage.getItem(KEYS.apiKey) ?? "",
     model: localStorage.getItem(KEYS.model) ?? "claude-sonnet-4-6",
+    gistToken: localStorage.getItem(KEYS.gistToken) ?? "",
+    gistId: localStorage.getItem(KEYS.gistId) ?? "",
   };
 }
 
 export function saveSettings(s: AppSettings): void {
   localStorage.setItem(KEYS.apiKey, s.apiKey);
   localStorage.setItem(KEYS.model, s.model);
+  localStorage.setItem(KEYS.gistToken, s.gistToken);
+  localStorage.setItem(KEYS.gistId, s.gistId);
+}
+
+export function loadLastSyncedAt(): string | null {
+  return localStorage.getItem(KEYS.lastSyncedAt);
+}
+
+export function saveLastSyncedAt(iso: string): void {
+  localStorage.setItem(KEYS.lastSyncedAt, iso);
 }
