@@ -13,3 +13,5 @@
 - [ ] decide: 50K from savings into a CD?
 - [ ] decide: 10K into index fund?
 - [ ] notify dad about ~$1700/month for CHM summer program
+
+<!-- sync test 21:38:20 -->
