@@ -8,20 +8,20 @@
   <key>ProgramArguments</key>
   <array>
     <string>/bin/bash</string>
-    <string>/Users/ericrosenbaum/Documents/list/scripts/sync.sh</string>
+    <string>/Users/ericrosenbaum/list/scripts/sync.sh</string>
   </array>
 
   <!-- Fire when any of the list files change. Individual files (not the repo
        dir) so our own .git writes don't retrigger the watcher. -->
   <key>WatchPaths</key>
   <array>
-    <string>/Users/ericrosenbaum/Documents/list/work.md</string>
-    <string>/Users/ericrosenbaum/Documents/list/home.md</string>
-    <string>/Users/ericrosenbaum/Documents/list/someday.md</string>
-    <string>/Users/ericrosenbaum/Documents/list/README.md</string>
-    <string>/Users/ericrosenbaum/Documents/list/CLAUDE.md</string>
-    <string>/Users/ericrosenbaum/Documents/list/archive/done.md</string>
-    <string>/Users/ericrosenbaum/Documents/list/archive/old-list.md</string>
+    <string>/Users/ericrosenbaum/list/work.md</string>
+    <string>/Users/ericrosenbaum/list/home.md</string>
+    <string>/Users/ericrosenbaum/list/someday.md</string>
+    <string>/Users/ericrosenbaum/list/README.md</string>
+    <string>/Users/ericrosenbaum/list/CLAUDE.md</string>
+    <string>/Users/ericrosenbaum/list/archive/done.md</string>
+    <string>/Users/ericrosenbaum/list/archive/old-list.md</string>
   </array>
 
   <!-- Fallback so remote changes and brand-new files still sync. -->
