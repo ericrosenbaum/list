@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>org.ericrosenbaum.list-sync</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/ericrosenbaum/Documents/list/scripts/sync.sh</string>
+  </array>
+
+  <!-- Fire when any of the list files change. Individual files (not the repo
+       dir) so our own .git writes don't retrigger the watcher. -->
+  <key>WatchPaths</key>
+  <array>
+    <string>/Users/ericrosenbaum/Documents/list/work.md</string>
+    <string>/Users/ericrosenbaum/Documents/list/home.md</string>
+    <string>/Users/ericrosenbaum/Documents/list/someday.md</string>
+    <string>/Users/ericrosenbaum/Documents/list/README.md</string>
+    <string>/Users/ericrosenbaum/Documents/list/CLAUDE.md</string>
+    <string>/Users/ericrosenbaum/Documents/list/archive/done.md</string>
+    <string>/Users/ericrosenbaum/Documents/list/archive/old-list.md</string>
+  </array>
+
+  <!-- Fallback so remote changes and brand-new files still sync. -->
+  <key>StartInterval</key>
+  <integer>300</integer>
+
+  <!-- Debounce bursts of saves. -->
+  <key>ThrottleInterval</key>
+  <integer>30</integer>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>HOME</key>
+    <string>/Users/ericrosenbaum</string>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/ericrosenbaum/Library/Logs/list-sync.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/ericrosenbaum/Library/Logs/list-sync.log</string>
+</dict>
+</plist>
