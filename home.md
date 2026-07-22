@@ -1,6 +1,6 @@
 # Home
 
-- [ ] change ISP
+- [ ] call ISP and reduce bill and switch
 - [ ] minisplit filter replacement
 - [ ] vasectomy — message dr. krieger
 - [ ] buy another pair of shorts
