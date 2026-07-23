@@ -31,3 +31,4 @@
 
 ## This week
 - [ ] Hand Sensing blog post draft — schedule review with Annie
+- schedule more weekly YAB sessions and notify cb
