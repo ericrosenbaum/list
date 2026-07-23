@@ -9,9 +9,3 @@ Pull items out of there when they become relevant.
 
 ## Ideas
 - [ ] Stars and Stories blog post
-- [ ] make video of music editor with AI song generation
-- [ ] try image-blaster on some toys — https://github.com/neilsonnn/image-blaster
-
-## House
-- [ ] clean out medicine cabinet
-- [ ] ant trap under stove / check outside for ant trails
