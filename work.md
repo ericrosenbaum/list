@@ -1,8 +1,8 @@
 # Work
 
 ## This week
-- [ ] Hand Sensing blog post draft — schedule review with Annie
 - Update on play testing for Gates Foundation
+- Hand Sensing blog post draft — schedule review with Annie
 - schedule more weekly YAB sessions and notify cb
 
 ## Priorities
