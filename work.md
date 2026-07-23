@@ -1,5 +1,10 @@
 # Work
 
+## This week
+- [ ] Hand Sensing blog post draft — schedule review with Annie
+- Update on play testing for Gates Foundation
+- schedule more weekly YAB sessions and notify cb
+
 ## Priorities
 
 - prioritization process
@@ -29,6 +34,3 @@
 - [ ] forum replacement feature for NGP release
 - [ ] grant requirements
 
-## This week
-- [ ] Hand Sensing blog post draft — schedule review with Annie
-- schedule more weekly YAB sessions and notify cb
