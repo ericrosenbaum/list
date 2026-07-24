@@ -1,6 +1,6 @@
 # Home
 
-- [ ] call carpet company 
+- [ ] call carpet company to schedule
 - call ISP and reduce bill and switch
 - [ ] minisplit filter replacement
 - [ ] vasectomy — message dr. krieger
