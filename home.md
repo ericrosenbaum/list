@@ -1,7 +1,7 @@
 # Home
 
 - [ ] call carpet company to schedule
-- call ISP and reduce bill and switch
+- call ISP and reduce bill or switch
 - [ ] minisplit filter replacement
 - [ ] vasectomy — message dr. krieger
 - [ ] buy another pair of shorts
